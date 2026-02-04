@@ -22,7 +22,7 @@ A aplicação utiliza um sistema de logs estruturado e um Global Exception Filte
 3. **Segurança e Auditoria:**
 Hasheamento de senhas com Bcrypt.
 
-4. Reversão de Transações: Caso uma fraude ou erro seja detectado, o sistema permite reverter a última transação, bloqueando automaticamente a carteira do pagador para auditoria.
+4. **Reversão de Transações:** Caso uma fraude ou erro seja detectado, o sistema permite reverter a última transação, bloqueando automaticamente a carteira do pagador para auditoria.
 
 ## 🛠️ Como Executar
 ### Pré-requisitos
