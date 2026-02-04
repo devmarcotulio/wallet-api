@@ -25,10 +25,10 @@ Hasheamento de senhas com Bcrypt.
 Reversão de Transações: Caso uma fraude ou erro seja detectado, o sistema permite reverter a última transação, bloqueando automaticamente a carteira do pagador para auditoria.
 
 # 🛠️ Como Executar
-Pré-requisitos
+1. Pré-requisitos
 Docker e Docker Compose instalados.
 
-Passo a Passo
+2. Passo a Passo
 Clone o repositório:
 
 Bash
@@ -42,4 +42,4 @@ Bash
 docker-compose up --build
 A API estará disponível em http://localhost:3000.
 
-Acesse a Documentação (Swagger): Abra o navegador em: http://localhost:3000/api/docs
+3. Acesse a Documentação (Swagger): Abra o navegador em: http://localhost:3000/api/docs
