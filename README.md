@@ -29,17 +29,11 @@ Reversão de Transações: Caso uma fraude ou erro seja detectado, o sistema per
 Docker e Docker Compose instalados.
 
 2. Passo a Passo
-Clone o repositório:
+  Clone o repositório: git clone https://github.com/seu-usuario/teste-nest.git
+  cd teste-nest
+  Configure as variáveis de ambiente: A aplicação já vem configurada para rodar no Docker com os valores padrão. Se desejar alterar, edite o arquivo docker-compose.yml.
 
-Bash
-git clone https://github.com/seu-usuario/teste-nest.git
-cd teste-nest
-Configure as variáveis de ambiente: A aplicação já vem configurada para rodar no Docker com os valores padrão. Se desejar alterar, edite o arquivo docker-compose.yml.
-
-Suba os containers:
-
-Bash
-docker-compose up --build
-A API estará disponível em http://localhost:3000.
+  Suba os containers: docker-compose up --build
+  A API estará disponível em http://localhost:3000.
 
 3. Acesse a Documentação (Swagger): Abra o navegador em: http://localhost:3000/api/docs
