@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: wallet_postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: wallet
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    build: .
+    container_name: wallet_api
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      # Aqui dizemos ao Node para usar o serviço 'postgres' como host
+      DB_HOST: postgres 
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASS: postgres
+      DB_NAME: wallet
+      JWT_SECRET: supersecret
+      JWT_EXPIRES_IN: 1d
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
