@@ -22,17 +22,17 @@ A aplicação utiliza um sistema de logs estruturado e um Global Exception Filte
 3. Segurança e Auditoria
 Hasheamento de senhas com Bcrypt.
 
-Reversão de Transações: Caso uma fraude ou erro seja detectado, o sistema permite reverter a última transação, bloqueando automaticamente a carteira do pagador para auditoria.
+4. Reversão de Transações: Caso uma fraude ou erro seja detectado, o sistema permite reverter a última transação, bloqueando automaticamente a carteira do pagador para auditoria.
 
 ## 🛠️ Como Executar
 ### Pré-requisitos
 Docker e Docker Compose instalados.
 
 ### Passo a Passo
-Clone o repositório: git clone https://github.com/seu-usuario/teste-nest.git
-Configure as variáveis de ambiente: A aplicação já vem configurada para rodar no Docker com os valores padrão. Se desejar alterar, edite o arquivo docker-compose.yml.
-
-### Suba os containers: docker-compose up --build. A API estará disponível em http://localhost:3000.
+1. Clone o repositório: git clone https://github.com/seu-usuario/teste-nest.git
+2. Configure as variáveis de ambiente: A aplicação já vem configurada para rodar no Docker com os valores padrão. Se desejar alterar, edite o arquivo docker-compose.yml.
+3. Suba os containers: docker-compose up --build.
+4. A API estará disponível em http://localhost:3000.
 
 ## Acesse a Documentação (Swagger): 
 ### Abra o navegador em: http://localhost:3000/api/docs
